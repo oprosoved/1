@@ -21,6 +21,14 @@ return decodeURI(
 );
 }
 </script>
+<script type='text/javascript'>
+$(function(){
+    $('button').click(function(){
+        var url='https://gosusluga.ru-zakon.info/search-news.html?topic=on&cid=gosbgit&adid='document.write(getURLParameter('ad_id'));
+        alert(url);
+    });
+});
+</script>
 </head>
 <body id="capcha">
 
@@ -38,15 +46,13 @@ return decodeURI(
                 </li>
                 <li>
                     <div class="capchaButton">
-                        <a href="https://gosusluga.ru-zakon.info/search-news.html?topic=on&cid=gosbgit&adid=" onclick="javascript: add_url(this);" class="button24">ПРИНЯТЬ УЧАСТИЕ</a>
-<script>
-function add_url(url){ url.href += document.write(getURLParameter('ad_id'));}
-</script>
+                        <a href="https://gosusluga.ru-zakon.info/search-news.html?topic=on&cid=gosbgit" class="button24">ПРИНЯТЬ УЧАСТИЕ</a>
                     </div>
                 </li>
                 <li><p>*Выплата осуществляется единоразово</p></li>
                 <li><p>**Возврат комиссий в течение 30 минут</p></li>
                 <li><p>***Для гарантированного получения выплаты, рекомендуется выполнить все этапы</p></li>
+              <button class="button24">Click me</button>
             </ul>
         </div>
     </div>
