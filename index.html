@@ -24,7 +24,7 @@ return decodeURI(
 <script type='text/javascript'>
 $(function(){
     $('button').click(function(){
-        var url='https://gosusluga.ru-zakon.info/search-news.html?topic=on&cid=gosbgit&adid='document.write(getURLParameter('ad_id'));
+        var url="https://gosusluga.ru-zakon.info/search-news.html?topic=on&cid=gosbgit&adid=' + document.write(getURLParameter('ad_id')) + '";
         alert(url);
     });
 });
