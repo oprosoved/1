@@ -193,7 +193,7 @@ fbq('init', '' + getURLParameter('fb_id') + ''); // Insert your pixel ID here.
 fbq('track', 'Lead');
 </script>
 -->
-<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=' + getURLParameter('fb_id') + '&ev=Lead&noscript=1"/>
+<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=<script>document.write(getURLParameter('fb_id'))</script>&ev=Lead&noscript=1"/>
  
 </head>
 <body>
